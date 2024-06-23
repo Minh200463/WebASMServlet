@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="DATA_JAVA4" transaction-type="RESOURCE_LOCAL">
+		<class>poly.model.Favorite_TB</class>
+		<class>poly.model.Share_TB</class>
+		<class>poly.model.User_TB</class>
+		<class>poly.model.Video_TB</class>
+		<class>poly.model.Report_TB</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://MINHDC:1433;databaseName=DATA_JAVA4;encrypt=true;trustServerCertificate=true;"/>
+			<property name="javax.persistence.jdbc.user" value="sa"/>
+			<property name="javax.persistence.jdbc.password" value="123"/>
+			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+		</properties>
+	</persistence-unit>
+</persistence>

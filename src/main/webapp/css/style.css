@@ -1,0 +1,21 @@
+header{
+    background-image: url("../img/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.con-infomation-login{
+    background-color: rgb(183, 209, 215);
+}
+
+.item-video{
+    box-shadow: 0px 0px 1px 1px rgb(232, 226, 226);
+    transition: .5s;
+}
+
+.item-video:hover{
+    transform: scale(1.025);
+    box-shadow: 0px 0px 3px 2px rgb(232, 226, 226);
+}
+
+
